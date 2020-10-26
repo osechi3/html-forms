@@ -8,6 +8,31 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  display: flex;
+
+  overflow-x: hidden;
+
+  background-color: #ffe01b;
+}
+
+main {
+  width: 70%;
+
+  background-color: #fff;
+}
+
+.background-image {
+  position: absolute;
+  right: -325px;
+
+  width: 729px;
+  height: 812px;
+
+  background: no-repeat;
+  background-image: url(../assets/images/background-img.png);
+}
+
 .header__logo {
   width: 38px;
 }
