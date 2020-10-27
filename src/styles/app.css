@@ -86,6 +86,10 @@ body {
   border-radius: 2px;
 }
 
+.form__text-input:focus {
+  border: 2px solid #007c89;
+}
+
 .form__password-block {
   position: relative;
 
@@ -115,18 +119,35 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
 
-  height: 70px;
+  height: 80px;
   margin-top: 25px;
   margin-bottom: 25px;
   padding: 0;
 
   font-size: 14px;
 
-  list-style-position: inside;
+  list-style-type: none;
 }
 
 .form__validation-point {
-  margin: 2px 0;
+  margin: 3px 0;
+}
+
+/* For accessibility reasons */
+.form__validation-point::before {
+  content: '\200B';
+}
+
+.bullet {
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+
+  background-color: #007c89;
+  border: 1px transparent;
+  border-radius: 50%;
 }
 
 .form__sign-up-block {
