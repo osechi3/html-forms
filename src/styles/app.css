@@ -51,6 +51,7 @@ body {
   width: 545px;
   margin-top: 60px;
   margin-right: 55px;
+  margin-bottom: 110px;
 
   outline: 1px solid;
 }
@@ -197,6 +198,25 @@ body {
 
 .form__consent-text {
   font-size: 14px;
+}
+
+.footer__copyright {
+  width: 700px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.footer__copyright-text {
+  color: #707070;
+  font-size: 13px;
+}
+
+.footer__copyright-text a {
+  color: #707070;
+}
+
+.footer__copyright-text a:hover {
+  color: #004e56;
 }
 
 .background-image {
