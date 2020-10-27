@@ -22,13 +22,10 @@ export class Form {
       this.toggleShowLabel()
     })
 
-    this.usernameField.addEventListener('focus', () => {
-      this.showUsernameHint()
-
-    })
-    this.usernameField.addEventListener('blur', () => {
-      this.removeUsernameHint()
-    })
+    this.usernameField
+      .addEventListener('focus', this.showUsernameHint.bind(this))
+    this.usernameField
+      .addEventListener('blur', this.removeUsernameHint.bind(this))
   }
 
   togglePasswordVisibility () {
