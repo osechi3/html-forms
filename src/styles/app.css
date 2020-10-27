@@ -156,7 +156,7 @@ body {
 }
 
 .form__sign-up-btn {
-  width: 140px;
+  width: 142px;
   height: 48px;
 
   color: #fff;
@@ -169,6 +169,15 @@ body {
 
 .form__sign-up-btn:hover {
   background-color: #006e7a;
+}
+
+.form__sign-up-btn:disabled {
+  color: #bdbbb9;
+
+  background-color: transparent;
+  border: 1px solid #dedddc;
+
+  pointer-events: none;
 }
 
 .form__email-list-checkbox {
