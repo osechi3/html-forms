@@ -169,6 +169,8 @@ body {
 
 .form__sign-up-btn:hover {
   background-color: #006e7a;
+
+  cursor: pointer;
 }
 
 .form__sign-up-btn:disabled {
