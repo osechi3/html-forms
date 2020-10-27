@@ -7,7 +7,7 @@ import { Form } from './components/Form'
 
 class App {
   constructor () {
-    Form.initListeners()
+    this.form = new Form()
   }
 }
 

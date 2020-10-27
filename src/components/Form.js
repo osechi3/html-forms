@@ -1,33 +1,37 @@
 export class Form {
-  static initListeners () {
-    const passwordField = document.querySelector('.form__password-input')
-    const showPasswordLabelShow = document.querySelector('.form__show-label-show')
-    const showPasswordLabelHide = document.querySelector('.form__show-label-hide')
+  constructor () {
+    this.usernameField = document.querySelector('.form__username-input')
+    this.passwordField = document.querySelector('.form__password-input')
+    this.showPasswordLabelShow = document.querySelector('.form__show-label-show')
+    this.showPasswordLabelHide = document.querySelector('.form__show-label-hide')
+    this.isPasswordShown = false
 
-    let isPasswordShown = false
+    this.initListeners()
+  }
 
-    showPasswordLabelShow.addEventListener('click', () => {
-      togglePasswordVisibility()
-      toggleShowLabel()
+  initListeners () {
+    this.showPasswordLabelShow.addEventListener('click', () => {
+      this.togglePasswordVisibility()
+      this.toggleShowLabel()
     })
-    showPasswordLabelHide.addEventListener('click', () => {
-      togglePasswordVisibility()
-      toggleShowLabel()
+    this.showPasswordLabelHide.addEventListener('click', () => {
+      this.togglePasswordVisibility()
+      this.toggleShowLabel()
     })
+  }
 
-    function togglePasswordVisibility () {
-      if (isPasswordShown === false) {
-        passwordField.type = 'text'
-        isPasswordShown = true
-      } else {
-        passwordField.type = 'password'
-        isPasswordShown = false
-      }
+  togglePasswordVisibility () {
+    if (this.isPasswordShown === false) {
+      this.passwordField.type = 'text'
+      this.isPasswordShown = true
+    } else {
+      this.passwordField.type = 'password'
+      this.isPasswordShown = false
     }
+  }
 
-    function toggleShowLabel () {
-      showPasswordLabelShow.classList.toggle('form__show-label_hidden')
-      showPasswordLabelHide.classList.toggle('form__show-label_hidden')
-    }
+  toggleShowLabel () {
+    this.showPasswordLabelShow.classList.toggle('form__show-label_hidden')
+    this.showPasswordLabelHide.classList.toggle('form__show-label_hidden')
   }
 }
