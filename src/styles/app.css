@@ -110,6 +110,10 @@ body {
   color: #004e56;
 }
 
+.form__show-label_hidden {
+  display: none;
+}
+
 .form__show-icon {
   margin-right: 10px;
 }

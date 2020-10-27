@@ -11,7 +11,7 @@
       <header class="main-section__header">
         <img class="main-section__header-logo" src="assets/images/header-logo.svg" alt="The page's logo - a smiling monkey head with a hat">
       </header>
-      <form class="form" action="" method="POST">
+      <form class="form" action="" method="POST" novalidate>
 
         <header class="form__header">
           <h1 class="form__title">Welcome to Mailchimp </h1>
@@ -26,8 +26,9 @@
 
         <div class="form__password-block">
           <label class="form__label" for="form-password">Password</label>
-          <input class="form__text-input" id="form-password" name="email" type="email" autocomplete="password">
-          <label class="form__show-label" for="form-password" role="button"><i class="form__show-icon far fa-eye"></i>Show</label>
+          <input class="form__text-input form__password-input" id="form-password" name="email" type="email" autocomplete="password">
+          <label class="form__show-label form__show-label-show" for="form-password" role="button"><i class="form__show-icon far fa-eye"></i>Show</label>
+          <label class="form__show-label form__show-label-hide form__show-label_hidden" for="form-password" role="button"><i class="form__show-icon far fa-eye-slash"></i>Hide</label>
           <ul class="form__password-validation-list">
             <li class="form__validation-point"><span class="bullet"></span>One lowercase character</li>
             <li class="form__validation-point"><span class="bullet"></span>One uppercase character</li>
