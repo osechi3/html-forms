@@ -19,7 +19,7 @@
         </header>
 
         <label class="form__label" for="form-email">Email</label>
-        <input class="form__text-input" id="form-email" name="email" type="email" autofocus autocomplete="email" required>
+        <input class="form__text-input form__email-input" id="form-email" name="email" type="email" autofocus autocomplete="email" required>
 
         <label class="form__label" for="form-username">Username</label>
         <input class="form__text-input form__username-input" id="form-username" name="username" type="text" autocomplete="username" required>
@@ -30,16 +30,19 @@
           <label class="form__show-label form__show-label-show" for="form-password" role="button"><i class="form__show-icon far fa-eye"></i>Show</label>
           <label class="form__show-label form__show-label-hide form__show-label_hidden" for="form-password" role="button"><i class="form__show-icon far fa-eye-slash"></i>Hide</label>
           <ul class="form__password-validation-list">
-            <li class="form__validation-point"><span class="bullet"></span>One lowercase character</li>
-            <li class="form__validation-point"><span class="bullet"></span>One uppercase character</li>
-            <li class="form__validation-point"><span class="bullet"></span>One number</li>
-            <li class="form__validation-point"><span class="bullet"></span>One special character</li>
-            <li class="form__validation-point"><span class="bullet"></span>8 characters minimum</li>
+            <li class="form__validation-point form__validation-point-lowercase"><span class="form__validation-bullet"></span>One lowercase character</li>
+            <li class="form__validation-point form__validation-point-uppercase"><span class="form__validation-bullet"></span>One uppercase character</li>
+            <li class="form__validation-point form__validation-point-number"><span class="form__validation-bullet"></span>One number</li>
+            <li class="form__validation-point form__validation-point-symbol"><span class="form__validation-bullet"></span>One special character</li>
+            <li class="form__validation-point form__validation-point-length"><span class="form__validation-bullet"></span>8 characters minimum</li>
           </ul>
+          <p class="form__password-success-text form__password-success-text_hidden">
+            <i class="form__password-success-icon far fa-check-circle"></i>Your password is secure and you're all set!
+          </p>
         </div>
 
         <div class="form__sign-up-block">
-          <button class="form__sign-up-btn">Sign Up</button>
+          <button class="form__sign-up-btn" type="button" disabled>Sign Up</button>
           <input class="form__email-list-checkbox" id="form-email-list" name="receiveEmail" type="checkbox">
           <label class="form__email-list-label" for="form-email-list">I don't want to receive emails about new Mailchimp products, best practices, or special offers.</label>
           <p class="form__consent">

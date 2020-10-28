@@ -155,8 +155,20 @@ body {
   list-style-type: none;
 }
 
+.form__password-validation-list_hidden {
+  display: none;
+}
+
 .form__validation-point {
   margin: 3px 0;
+}
+
+.form__validation-point_validated {
+  color: #bdbbb9;
+}
+
+.form__validation-bullet_validated {
+  background-color: #bdbbb9 !important;
 }
 
 /* For accessibility reasons */
@@ -164,7 +176,7 @@ body {
   content: '\200B';
 }
 
-.bullet {
+.form__validation-bullet {
   display: inline-block;
 
   width: 8px;
@@ -174,6 +186,28 @@ body {
   background-color: #007c89;
   border: 1px transparent;
   border-radius: 50%;
+}
+
+.form__password-success-text {
+  margin: 25px 0 35px 0;
+  padding: 12px;
+
+  font-weight: bold;
+  font-size: 15px;
+
+  background-color: #d8eacc;
+  border: 1px transparent;
+  border-radius: 2px;
+}
+
+.form__password-success-text_hidden {
+  display: none;
+}
+
+.form__password-success-icon {
+  margin-right: 13px;
+
+  font-size: 20px;
 }
 
 .form__sign-up-block {
