@@ -20,7 +20,7 @@ module.exports = {
 
     /* name of the repo (if deploying to gh-pages) ('/repo-name/')
       or '/' (if deploying to firebase) */
-    publicPath: '/'
+    publicPath: '/html-forms/'
   },
 
   devServer: {
