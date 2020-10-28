@@ -49,9 +49,7 @@ body {
   align-self: center;
 
   width: 545px;
-  margin-top: 60px;
-  margin-right: 55px;
-  margin-bottom: 110px;
+  margin: 60px 55px 110px 0;
 }
 
 .form__title {
