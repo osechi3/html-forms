@@ -29,7 +29,6 @@ export class Validation {
   }
 
   validatePasswordRequirements () {
-    console.log(this.passwordField.validity)
     if (this.passwordField.value.match(/[0-9]/)) {
       this.validationPointNumber
         .classList.add('form__validation-point_validated')
@@ -94,16 +93,13 @@ export class Validation {
   }
 
   validatePassword () {
-    console.log('works')
     if (this.passwordField.value.match(/^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{8,})/)) {
-      console.log('matches')
       this.signUpBtn.disabled = false
       this.validationList.classList
         .add('form__password-validation-list_hidden')
       this.passwordSuccessText.classList
         .remove('form__password-success-text_hidden')
     } else {
-      console.log('doesn\'t match')
       this.signUpBtn.disabled = true
       this.validationList.classList
         .remove('form__password-validation-list_hidden')
