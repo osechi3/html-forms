@@ -40,11 +40,9 @@ module.exports = {
       },
 
       {
-        test: /\.js$/,
-        exclude: '/node_modules/',
+        test: /\.png$/,
         use: [
-          'babel-loader',
-          'eslint-loader'
+          'url-loader'
         ]
       }
     ]
@@ -60,7 +58,7 @@ module.exports = {
       patterns: [
         {
           from: 'src/assets/images',
-          to: path.resolve(__dirname, 'dist/images')
+          to: path.resolve(__dirname, 'dist/assets/images')
         }
       ]
     }),
@@ -69,7 +67,7 @@ module.exports = {
       config: [{
         test: /\.(jpe?g|png)/,
         options: {
-          quality: 60
+          quality: 70
         }
       }]
     }),
@@ -79,12 +77,12 @@ module.exports = {
       gifsicle: null,
       optipng: null,
 
-      plugins: [
-        imageminMozjpeg({
-          quality: 75,
-          progressive: true
-        })
-      ]
+      // plugins: [
+      //   imageminMozjpeg({
+      //     quality: 75,
+      //     progressive: true
+      //   })
+      // ]
     })
   ]
 }
