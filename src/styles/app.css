@@ -251,7 +251,7 @@ body {
   margin-left: 32px;
 
   background-color: #fefefe;
-  border: 2px solid #007c89;
+  border: 1px solid #bcbab8;
   border-radius: 2px;
   cursor: pointer;
 
@@ -261,8 +261,13 @@ body {
   appearance: none;
 }
 
+.form__email-list-checkbox:focus {
+  border: 2px solid #007c89;
+}
+
 .form__email-list-checkbox:checked {
   background-color: #017c89;
+  border: 2px solid #007c89;
 }
 
 .form__email-list-checkbox:checked::before {
